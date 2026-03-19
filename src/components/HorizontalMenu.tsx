@@ -90,7 +90,7 @@ const HorizontalMenu: React.FC = () => {
         
         {hiddenMenuItems.length > 0 && (
           <li 
-            className="more-item" 
+            className={`more-item ${activeIndex >= visibleCount ? 'active' : ''}`} 
             ref={moreRef}
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
