@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import StickyTable from './components/StickyTable'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,8 @@ function App() {
           Count is {count}
         </button>
       </section>
+
+      <StickyTable />
 
       <div className="ticks"></div>
 
